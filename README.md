@@ -7,8 +7,8 @@
 A Blazor and a WebApi demo application to demonstrate use of Refit library.
 
 ## Two Methods
-- Dependency Injection : Books
-- REST Service : WeatherForecast
+- Dependency Injection : BooksData Interface
+- REST Service : WeatherForecast Interface
 
 ## Project Structure
 ```
