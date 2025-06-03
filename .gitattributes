@@ -3,6 +3,7 @@
 ###############################################################################
 * text=auto
 *.cs linguist-language=C#
+*.razor linguist-language=Blazor
 
 ###############################################################################
 # Set default behavior for command prompt diff.
