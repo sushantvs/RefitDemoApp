@@ -1,0 +1,58 @@
+﻿@page "/"
+@rendermode InteractiveServer
+
+<PageTitle>Home</PageTitle>
+
+@inject IBooksData  BooksData
+
+@if (books is not null)
+{
+        @foreach (var book in books)
+        {
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>@book.Title by @book.Author</h2>
+                </div>
+            <div class="col-md-6">
+                    <button class="btn-primary" @onclick="@(() => AddBook(book))">Add book</button>
+                    <button class="btn-primary" @onclick="@(() => UpdateBook(book))">Update book</button>
+                    <button class="btn-primary" @onclick="@(() => DeleteBook(book))">Delete book</button>
+                </div>
+            </div>
+        }
+}
+@code{
+    private List<BooksModel> books;
+
+    protected override async Task OnInitializedAsync()
+    {
+        books = await BooksData.GetBooksAsync();
+    }
+    
+    private async Task AddBook(BooksModel book)
+    {
+        await BooksData.AddBookAsync(
+            new BooksModel
+                {
+                    Id = books.Count + 1, // Simple ID generation for demo purposes
+                    Title = book.Title,
+                    Author = book.Author,
+                    Description = book.Description,
+                    Publisher = book.Publisher
+                });
+        books = await BooksData.GetBooksAsync(); // Refresh the list after adding
+    }
+
+    private async Task UpdateBook(BooksModel book)
+    {
+        book.Author = "Updated Author"; // Example update
+        await BooksData.UpdateBookAsync(book.Id, book);
+        books = await BooksData.GetBooksAsync(); // Refresh the list after updating
+    }
+
+    private async Task DeleteBook(BooksModel book)
+    {
+        await BooksData.DeleteBookAsync(book.Id);
+        books = await BooksData.GetBooksAsync(); // Refresh the list after updating
+    }
+}

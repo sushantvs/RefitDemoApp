@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36121.58
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefitDemoApi", "RefitDemoApi\RefitDemoApi.csproj", "{D3549631-3D45-40A0-AC9C-4B7D154E3950}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefitDemoUI", "RefitDemoUI\RefitDemoUI.csproj", "{9CA3E111-0D5E-4CE7-9CEE-BC37365F40B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3549631-3D45-40A0-AC9C-4B7D154E3950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3549631-3D45-40A0-AC9C-4B7D154E3950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3549631-3D45-40A0-AC9C-4B7D154E3950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3549631-3D45-40A0-AC9C-4B7D154E3950}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CA3E111-0D5E-4CE7-9CEE-BC37365F40B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CA3E111-0D5E-4CE7-9CEE-BC37365F40B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CA3E111-0D5E-4CE7-9CEE-BC37365F40B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CA3E111-0D5E-4CE7-9CEE-BC37365F40B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75129793-31BF-495D-8F95-FD0BBB8B2EFA}
+	EndGlobalSection
+EndGlobal

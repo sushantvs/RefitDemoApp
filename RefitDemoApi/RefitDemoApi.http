@@ -1,0 +1,6 @@
+@RefitDemoApi_HostAddress = http://localhost:5218
+
+GET {{RefitDemoApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
