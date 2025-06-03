@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
+//Method 1 : Using Refit for HTTP Client - Dependency Injection 
 builder.Services.AddRefitClient<IBooksData>()
     .ConfigureHttpClient(c =>
     {

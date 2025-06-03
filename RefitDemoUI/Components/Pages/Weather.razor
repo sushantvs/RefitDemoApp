@@ -41,6 +41,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
+        //Method 2 : Using Refit to call the Weather API - Rest service
         var weatherData = RestService.For<IWeatherData>("https://localhost:44341");
         forecasts = await weatherData.GetWeatherAsync();
     }
