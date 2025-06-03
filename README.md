@@ -5,7 +5,7 @@
 ![Refit](https://img.shields.io/badge/Refit-darkblue)
 ![WebAPI](https://img.shields.io/badge/WebAPI-lightgrey)
 
-A Blazor and a WebApi demo application to demonstrate use of Refit library.
+A Blazor and a WebAPI demo application to demonstrate use of Refit library.
 
 ## Two Methods
 - Dependency Injection : BooksData Interface
