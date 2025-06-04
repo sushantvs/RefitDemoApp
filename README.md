@@ -9,7 +9,7 @@ A Blazor and a WebAPI demo application to demonstrate use of Refit library.
 
 ## Refit is used in two ways
 - Dependency Injection : BooksData Interface
-- REST Service : WeatherForecast Interface
+- Instantiating a REST Service : WeatherForecast Interface
 
 ## Project Structure
 ```
